@@ -2,8 +2,8 @@ sudo: required
 services:
   - docker
 before_install:
-  - gem update --system
-  - sudo gem install bundler
+  
+  - sudo gem install bundler -v '< 2'
   - docker build -t app/sample-app -f Dockerfile.dev .
 
 script:
