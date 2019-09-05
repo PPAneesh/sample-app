@@ -2,7 +2,26 @@ sudo: required
 services:
   - docker
 before_install:
+<<<<<<< HEAD
+=======
+ 
+  
+>>>>>>> c9bc31a8046c4ac7cd9046d6142167af790fc37d
   - docker build -t app/sample-app -f Dockerfile .
 
 script:
-  - docker run app/sample-app npm run test -- --coverage
+  - 'gem install bundler'
+  
+deploy:
+  provider: elasticbeanstalk
+  region: "us-east-1"
+  app: "Docker-react"
+  env: "DockerReact-env"
+  bucket_name: "elasticbeanstalk-us-east-1-562876592009"
+  bucket_path: "Docker-react"
+  on:
+   branch: master
+  access_key_id: "$AWS_ACCESS_KEY"
+  secret_access_key:
+   secure: "$AWS_SECRET_KEY"
+  

@@ -8,8 +8,13 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
+<<<<<<< HEAD
          Hi this is aneesh's first docker implementation!!!! 
        </p>
+=======
+         This is Aneesh'f First EBS code deployment!!!!!!!!
+        </p>
+>>>>>>> c9bc31a8046c4ac7cd9046d6142167af790fc37d
         <a
           className="App-link"
           href="https://reactjs.org"
