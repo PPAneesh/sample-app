@@ -10,4 +10,4 @@ before_install:
 script:
   - 'gem install bundler'
   
-  - docker run app/sample-app npm run test -- --coverage
+ 
