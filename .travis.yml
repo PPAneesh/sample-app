@@ -9,5 +9,5 @@ before_install:
 
 script:
   - 'gem install bundler'
-  - 'rake spec'
+  
   - docker run app/sample-app npm run test -- --coverage
